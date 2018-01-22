@@ -19,6 +19,12 @@ var name = 'Tyler';
 
 //Code Here
 
+function isTyler (name){
+  if(name == 'Tyler'){
+    return true;
+  }
+  return false;
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -29,7 +35,10 @@ var name = 'Tyler';
 
 //Code Here
 
-
+function getName(){
+var name = prompt("Please inut your name");
+return name;
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -42,7 +51,10 @@ var name = 'Tyler';
 
 //Code Here
 
-
+function welcome(){
+  name = getName();
+  alert("Welcome, " + name);
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -52,6 +64,8 @@ var name = 'Tyler';
 
 //Answer Here
 
+// Arguments are values that are passed to functions on the call of that function
+// Parameters are placeholders for data that will be passed into the function in the form of arguments
 
 
 ////////// PROBLEM 5 //////////
@@ -62,6 +76,8 @@ var name = 'Tyler';
 
 //Answer Here
 
+// Falsy values are: false, null, undefined, 0, NaN, and '' (empty string)
+// Falsy values can be checked for using boolean logic, specifically the NOT operator (!)
 
 
 ////////// PROBLEM 6 //////////
@@ -73,6 +89,10 @@ var name = 'Tyler';
 //Code Here
   
 
+function myName() {
+  return "Trevor";
+}
+
 
 /*
   Now save the function definition of myName into a new variable called newMyName
@@ -80,7 +100,7 @@ var name = 'Tyler';
 
 //Code Here
 
-
+var newMyName = myName;
 
 /*
   Now alert the result of invoking newMyName
@@ -88,7 +108,7 @@ var name = 'Tyler';
 
 // Code Here
 
-
+alert(newMyName());
 
 ////////// PROBLEM 7 //////////
 
@@ -98,6 +118,11 @@ var name = 'Tyler';
 
 //Code Here
 
+function outerFn() {
+  return ()=> {
+    return "Trevor";
+  }
+}
 
 
 /*
@@ -106,6 +131,8 @@ var name = 'Tyler';
 
 //Code Here
 
+var innerFn = outerFn();
+
 
 
 /* 
@@ -113,3 +140,5 @@ var name = 'Tyler';
 */
 
 // Code Here
+
+innerFn();
